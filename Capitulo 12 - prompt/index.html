@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prompt</title>
+
+    <script type="text/javascript">
+    
+    //primer ejercicio
+    /*var usuario = prompt("introducir nombre usuario:");
+
+    if(usuario){
+        console.log("usuario introducido");
+    }else{
+        console.log("no haz introducido un usuario");
+    }*/
+
+    //segundo ejercicio
+    var usuario = prompt("introducir tu nombre de usuario:");
+
+    if(usuario && usuario.trim()){
+        var confirmar = confirm("Es "+ usuario + " correcto?");
+
+        if(confirmar){
+            alert("usuario correcto");
+        }else{
+            alert("usuario incorrecto");
+        }
+
+    }else{
+        alert("no has introducido un usuario");
+    }
+
+    console.log(" esto es un string".trim());
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
